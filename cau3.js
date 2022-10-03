@@ -4,11 +4,11 @@ function sumOfListPrime() {
     let flag = 1;
 
     function sumOfListPrime(num) {
-        for (let j = 0; j <= num; j++) {
+        for (var j = 0; j <= num; j++) {
             if (j < 2) {
                 continue;
             } else {
-                for (let i = 2; i <= Math.sqrt(j); i++) {
+                for (var i = 2; i <= Math.sqrt(j); i++) {
                     if (j % i === 0) {
                         flag += 1;
                         break;

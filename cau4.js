@@ -14,6 +14,9 @@ function HCN(){
 
         }
         render(canvas){
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = this.color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
 
         }
 
